@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <ul>
+                <li> <a href="index.html" >Home</a></li>
+                <li> <a href="addshirt.html" class="active">Shirt</a></li>
+                <li> <a href="loginpage.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Shirt Information</h1>
+        <form action="" method="post">
+            <div> <label for="brandname">Brand Name:</label>
+                </br>
+                <input type="text" name="brandname" id="brandname" placeholder="enter brandname" required>
+                </br>
+            </div>
+            <div>
+                <label for="size">Size:</label>
+                </br>
+                <input type="radio" name="size" id="small" value="Small">
+                <span>Small</span>
+                <input type="radio" name="size" id="medium" value="medium">
+                <span>Medium</span>
+                <input type="radio" name="size" id="large" value="large">
+                <span>Large</span>
+                </br>
+                <span>Other:</span>
+                <input type="text" name="size" id="other" placeholder="xxs,xs,xxl,xl">
+            </div>
+            <div>
+                <label for="gender">Gender</label>
+                </br>
+                <input type="radio" name="gender" id="male" value="male">
+                <span>Male</span>
+                <input type="radio" name="gender" id="female" value="female">
+                <span>Female</span>
+                </br>
+                <span>Other</span>
+                <input type="text" name="gender" id="other">
+            </div>
+            <div>
+                <label for="age">Age</label>
+            </br>
+            <input type="checkbox" name="age" id="kids" value="kids" >
+            <span>Kids</span>
+            <input type="checkbox" name="age" id="teens" value="teens" > 
+            <span>Teens</span>
+            <input type="checkbox" name="age" id="adult" value="adult" >
+            <span>Adult</span>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <h3>Annashar S. Sari</h3>
+</body>
+
+</html>
