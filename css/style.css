@@ -1,95 +1,105 @@
-html,body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0px;
-    padding: 0px;
+html,
+body {
+  font-family: Arial, sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  background-color: #f5f5f5;
+
 }
 header {
-    background-color: rgb(0, 25, 148);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+  color: white;
+  padding: 0;
+  background-color: rgb(0, 25, 148);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
-.title  {
-    color: #f2f2f2;
-    text-align: center;
-    font-size: 50px;
-    padding-top: 7px;
+.title {
+  color: #f2f2f2;
+  text-align: center;
+  font-size: 50px;
+  padding-top: 7px;
 }
-.topnav{
-    overflow: hidden;
-    border-bottom-left-radius: 10px;
+.topnav {
+  overflow: hidden;
+  border-bottom-left-radius: 10px;
 }
+
 .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 10px 25px 10px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-.login {
-    position: absolute;
-    right: 0px;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 25px 10px;
+  text-decoration: none;
+  font-size: 17px;
 }
 .topnav a:hover {
-    background-color: #f2f2f24f;
-    color: black;
-  }
-  .topnav a.active {
-    background-color: #0936ca;
-    color: white;
-  }
-  .footer{
-    margin: 0;
-    background-color: rgb(0, 25, 148);
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    color: #f2f2f2;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-  }
+  background-color: #f2f2f24f;
+  color: black;
+}
 
-    /* javascript css */
-    .popup {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      z-index: 9999;
-    }
-    .popup-content {
-      background-color: white;
-      width: 300px;
-      padding: 20px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    .close {
-      float: right;
-      cursor: pointer;
-    }
-    #loginForm {
-      margin-top: 20px;
-    }
-    input[type="text"],
-    input[type="password"],
-    button {
-      width: 100%;
-      padding: 10px;
-      margin-top: 10px;
-      border: 1px solid #ccc;
-    }
-    button {
-      background-color: #007bff;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
+.topnav a.active {
+  background-color: #0936ca;
+  color: white;
+}
+
+.footer {
+  margin: 0;
+  background-color: rgb(0, 25, 148);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: #f2f2f2;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-bttn{
+  position: absolute;
+  right: 0px;
+}
+.login {
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  padding-top: 0;
+  max-width: 400px;
+  width:100%;
+}
+.login-form {
+  width: 80%;
+  max-width: 400px;
+}
+.login h1 {
+  text-align: center;
+}
+.login label {
+  display: block;
+  padding-bottom: 0px;
+}
+.login input[type="text"],
+.login input[type="password"],
+.login input[type="email"],
+.login input[type="submit"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .login-form {
+      width: 90%; /* Adjust width for smaller screens */
+  }
+}
