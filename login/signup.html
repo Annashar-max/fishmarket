@@ -50,7 +50,7 @@
     </div>
             <div>
                 <div class="bot">
-            <button type="submit">Back</button>
+            <button type="submit" onclick="goBack()">Back</button>
             <button type="submit">Login</button>
 
             </div>
@@ -61,5 +61,9 @@
         <h3 class="footer">Copyright 2024. All Reserved</h3>
     </footer>
 </body>
-
+<script>
+    function goBack() {
+      window.history.back();
+    }
+    </script>
 </html>
