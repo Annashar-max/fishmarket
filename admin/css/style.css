@@ -1,0 +1,91 @@
+body,html {
+    margin: 0;
+    padding: 0;
+}
+.login-form{
+    background-color: rgb(0, 25, 148);
+    width: 100%; /* Adjust width */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.login-page {
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    height: 50%; /* Adjust height to center vertically */
+    border: 2px solid #ccc; /* Add border */
+    border-radius: 10px; /* Add border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+    margin-top: 150px;
+    margin-left: 250px;
+}
+
+.login-page .form-group {
+    margin-bottom: 1rem;
+}
+
+.login-page .form-group label {
+    margin-right: 1rem;
+    font-weight: bold;
+}
+
+.login-page .form-group input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+}
+
+.login-page button {
+    width: 6rem;
+    padding: 0.5rem;
+    background-color: blue;
+    color: white;
+    border-radius: 0.25rem;
+}
+
+.login-page button:hover {
+    cursor: pointer;
+    background-color: darkblue;
+}
+.sidebar {
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logout-button {
+    display: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: auto; /* Pushes the button to the bottom */
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    background-color: #0056b3;
+}

@@ -87,16 +87,47 @@ main {
   display: block;
   padding-bottom: 0px;
 }
-.login input[type="text"],
-.login input[type="password"],
-.login input[type="email"],
-.login input[type="submit"] {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+.login .form-group {
+  margin-bottom: 1rem;
+}
+
+.login .form-group label {
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+.login .form-group input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  width: 20rem;
+}
+
+.login button {
+  width: 7rem;
+  padding: 0.5rem;
+  background-color: blue;
+  color: white;
+  border-radius: 0.25rem;
+}
+
+.login button:hover {
+  cursor: pointer;
+  background-color: darkblue;
+}
+.login p {
+  font-size: small;
+}
+.login a {
+  text-decoration: none;
+}
+.bot {
+  display: flex;
+  justify-content: space-between;
+}
+.sign{
+  display: flex;
+  justify-content: space-between;
 }
 @media (max-width: 768px) {
   .login-form {
