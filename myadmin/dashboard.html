@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seafood Market Admin</title>
+   </head>
+   
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i class='fas fa-user-alt'></i>
+      <span class="logo_name">ADMIN</span>
+    </div>
+    <hr class="line">
+    <ul class="nav-links">
+      <li>
+        <a href="dashboard.html" class="active">
+          <i class="fa-solid fa-chart-line"></i>
+          <span class="link_name">Dashboard</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="dashboard.html" class="active">Dashboard</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="link_name">Product</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="../myadmin/product/fresh.html">Product</a></li>
+          <li><a href="../myadmin/product/fresh.html">Fresh</a></li>
+          <li><a href="../myadmin/product/freeze.html">Frozen</a></li>
+          <li><a href="../myadmin/product/dried.html">Dried</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="../myadmin/seller/information.html">
+            <i class="fa-solid fa-store"></i>
+            <span class="link_name">Seller</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="../myadmin/seller/information.html">Seller</a></li>
+          <li><a href="../myadmin/seller/information.html">Information</a></li>
+          <li><a href="../myadmin/seller/product.html">Product</a></li>
+          <li><a href="../myadmin/seller/purchased.html">Purchased</a></li>
+          <li><a href="../myadmin/seller/order.html">Order</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="../myadmin/customer/information.html" >
+            <i class="fa-solid fa-users"></i>
+            <span class="link_name">Customer</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="../myadmin/customer/information.html" >Customer</a></li>
+          <li><a href="../myadmin/customer/information.html" >Information</a></li>
+          <li><a href="../myadmin/customer/purchased.html">Purchased</a></li>
+          <li><a href="../myadmin/customer/order.html">Order</a></li>
+        </ul>
+      </li>
+     <li>
+        <div class="iocn-link">
+          <a href="../myadmin/account/seller.html" >
+            <i class="fa-solid fa-user"></i>
+            <span class="link_name">Account</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="../myadmin/account/seller.html" >Account</a></li>
+          <li><a href="../myadmin/account/seller.html" >Seller</a></li>
+          <li><a href="../myadmin/account/customer.html">Customer</a></li>
+        </ul>
+      </li>
+      <hr class="line">
+      <li class="logout-link">
+      <a href="../myadmin/login/login.html">
+          <i class="fa-solid fa-right-from-bracket"></i>
+          <span class="link_name">Logout</span>
+        </a>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="../myadmin/login/login.html">Logout</a></li>
+        </ul>
+      </li>
+  </div>
+  <section class="home-section">
+  <i class='bx bx-menu' ></i>
+      <span class="text">DASHBOARD</span>
+    <div class="home-contents">
+      <div class="name">
+      <div class="overview-boxes">
+
+                <div class="box">
+                    <div class="right-side">
+                        <div class="number">0</div>
+                        <div class="box-topic">Monthy Sale</div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="right-side">
+                        <div class="number">0</div>
+                        <div class="box-topic">Yearly Sale</div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="right-side">
+                        <div class="number">0</div>
+                        <div class="box-topic">Customer</div>
+                    </div>
+                </div> 
+            </div>
+            <div class="overview-boxes">
+
+                <div class="chart">
+             </div>
+             <div class="chart">
+             </div>
+    
+            </div>
+          </div>
+
+    </div>
+  </section>
+
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+</body>
+</html>

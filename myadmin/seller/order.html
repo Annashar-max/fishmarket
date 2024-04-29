@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seafood Market Admin</title>
+   </head>
+   
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i class='fas fa-user-alt'></i>
+      <span class="logo_name">ADMIN</span>
+    </div>
+    <hr class="line">
+    <ul class="nav-links">
+      <li>
+        <a href="../dashboard.html">
+          <i class="fa-solid fa-chart-line"></i>
+          <span class="link_name">Dashboard</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="../dashboard.html">Dashboard</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="../product/fresh.html">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="link_name">Product</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="../product/fresh.html">Product</a></li>
+          <li><a href="../product/fresh.html" >Fresh</a></li>
+          <li><a href="../product/freeze.html">Frozen</a></li>
+          <li><a href="../product/dried.html">Dried</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="order.html" class="active">
+            <i class="fa-solid fa-store"></i>
+            <span class="link_name">Seller</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="order.html" class="active">Seller</a></li>
+          <li><a href="information.html">Information</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="purchased.html">Purchased</a></li>
+          <li><a href="order.html" class="active">Order</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="../customer/information.html" >
+            <i class="fa-solid fa-users"></i>
+            <span class="link_name">Customer</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="../customer/information.html" >Customer</a></li>
+          <li><a href="../customer/information.html" >Information</a></li>
+          <li><a href="../customer/purchased.html">Purchased</a></li>
+          <li><a href="../customer/order.html">Order</a></li>
+        </ul>
+      </li>
+     <li>
+        <div class="iocn-link">
+          <a href="../account/seller.html" >
+            <i class="fa-solid fa-user"></i>
+            <span class="link_name">Account</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="../account/seller.html" >Account</a></li>
+          <li><a href="../account/seller.html" >Seller</a></li>
+          <li><a href="../account/customer.html" >Customer</a></li>
+        </ul>
+      </li>
+      <hr class="line">
+      <li class="logout-link">
+      <a href="../login/login.html">
+          <i class="fa-solid fa-right-from-bracket"></i>
+          <span class="link_name">Logout</span>
+        </a>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="../login/login.html">Logout</a></li>
+        </ul>
+      </li>
+  </div>
+  <section class="home-section">
+  <i class='bx bx-menu' ></i>
+      <span class="text">Information</span>
+    <div class="home-contents">
+
+    </div>
+  </section>
+
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+</body>
+</html>
