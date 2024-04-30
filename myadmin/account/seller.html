@@ -54,7 +54,7 @@
           <li><a class="link_name" href="../seller/information.html" >Seller</a></li>
           <li><a href="../seller/information.html">Information</a></li>
           <li><a href="../seller/product.html">Product</a></li>
-          <li><a href="../seller/purchased.html">Purchased</a></li>
+         <!-- None -->
           <li><a href="../seller/order.html">Order</a></li>
         </ul>
       </li>
@@ -69,7 +69,7 @@
         <ul class="sub-menu">
           <li><a class="link_name" href="../customer/information.html" >Customer</a></li>
           <li><a href="../customer/information.html" >Information</a></li>
-          <li><a href="../customer/purchased.html">Purchased</a></li>
+        <!-- None -->
           <li><a href="../customer/order.html">Order</a></li>
         </ul>
       </li>
@@ -98,11 +98,48 @@
         </ul>
       </li>
   </div>
-  <section class="home-section">
+  
+<section class="home-section">
   <i class='bx bx-menu' ></i>
-      <span class="text">Information</span>
-    <div class="home-contents">
-
+  <div class="search-bar">
+    <input type="text" placeholder="Search...">
+    <button type="submit">Search</button>
+  </div>
+  <div class="home-contents">
+    <div class="contents">
+      <span class="text">Seller Account</span> 
+      <table border="1" class="table">
+        <thead>
+          <tr>
+            <th>Seller ID</th>
+            <th>Seller Name </th>
+            <th>Contact No.</th>
+            <th>Address</th>
+            <th>Account </th>
+            <th>Status </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>001</td>
+            <td>Doe, John M.</td>
+            <td>(123) 456-7890</td>
+            <td>123 Main St, City, State, ZIP</td>
+            <td>04/29/24</td>
+            <td><div class="status-green">Approved</div></td>
+          </tr>
+          <tr>
+            <td>002</td>
+            <td>Smith, Jane M.</td>
+            <td>(456) 789-0123</td>
+            <td>456 Oak Ave, Town, State, ZIP</td>
+            <td>04/29/24</td>
+            <td><button class="approve-btn">Approve</button><button class="decline-btn">Decline</button></td>
+          </tr>
+          <!-- Add more rows as needed -->
+        </tbody>
+      </table>
+      
     </div>
   </section>
 
