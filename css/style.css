@@ -93,6 +93,38 @@ header {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+.account {
+  float: right;
+  overflow: hidden;
+}
+.account .dropbtn {
+  font-size: 17px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  color: white;
+  padding: 10px 10px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.account-content {
+  display: none;
+  position: absolute;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color:rgb(0, 25, 148);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.topnav a:hover, .account:hover .dropbtn {
+  background-color: #f2f2f24f;
+  color: white;
+}
+.account:hover .account-content {
+  display: block;
+}
 .footer {
   margin: 0;
   background-color: rgb(0, 25, 148);
