@@ -114,12 +114,12 @@ main {
 }
 .content{
   margin-top: 175px;
-  background-image: url("../picture/pic1.jpg");
+  /* background-image: url("../picture/pic1.jpg");
   filter: blur(8px);
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .login {

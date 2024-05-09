@@ -12,55 +12,27 @@
         <header>
             <h1 class="title">Seafood Market</h1>
             <nav class="topnav">
-                    <a href="../index.html">Home</a>
-                    <a href="products.html" class="active">Products</a>
-                    <a href="../aboutus/aboutus.html">About Us</a>
-                    <a href="../contact/contact.html">Contact</a>
-                    <a href="../login/loginpage.html" class="login-bttn">Login</a>
-            </nav>
+                <a href="../index.html">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn" class="active">Products
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="product/products.html" class="active">Fresh</a>
+                      <a href="#">Frozen</a>
+                      <a href="#">Dried</a>
+                    </div>
+                  </div>
+                <a href="../aboutus/aboutus.html">About Us</a>
+                <a href="../aboutus/aboutus.html">Contact</a>
+                <input type="text" placeholder="Search..">
+                <a href="../login/loginpage.html" class="login-bttn">Login</a>
+
+        </nav>
         </header>
     <main>
         <div class="content">
-        <h1>Shirt Information</h1>
-        <form action="" method="post">
-            <div> <label for="brandname">Brand Name:</label>
-                </br>
-                <input type="text" name="brandname" id="brandname" placeholder="enter brandname" required>
-                </br>
-            </div>
-            <div>
-                <label for="size">Size:</label>
-                </br>
-                <input type="radio" name="size" id="small" value="Small">
-                <label for="small">Small</label>
-                <input type="radio" name="size" id="medium" value="medium">
-                <label for="medium">Medium</label>
-                <input type="radio" name="size" id="large" value="large">
-                <label for="large">Large</label>
-                </br>
-                <span>Other:</span>
-                <input type="text" name="size" id="other" placeholder="xxs,xs,xxl,xl">
-            </div>
-            <div>
-                <label for="gender">Gender</label>
-                </br>
-                <input type="radio" name="gender" id="male" value="male">
-                <label for="male">Male</label>
-                <input type="radio" name="gender" id="female" value="female">
-                <label for="female">Female</label>
-                </br>
-                <label for="other">Others</label>
-                <input type="text" name="gender" id="other">
-            </div>
-            <div>
-                <label for="age">Age</label>
-            </br>
-            <input type="checkbox" name="age" id="kids" value="kids" >
-            <<label for="kids">Kids</label>
-            <input type="checkbox" name="age" id="teens" value="teens" >
-            <label for="teens">Teen</label>
-            <input type="checkbox" name="age" id="adult" value="adult" >
-            <label for="adult">Adult</label>
+        
             </div>
         </form>
         </div>
