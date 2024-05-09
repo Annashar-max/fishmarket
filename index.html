@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seafood Market</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -13,20 +14,27 @@
         <h1 class="title">Seafood Market</h1>
         <nav class="topnav">
                 <a href="index.html" class="active">Home</a>
-                <a href="product/products.html">Products</a>
+            
+                <div class="dropdown">
+                    <button class="dropbtn">Products
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="product/products.html">Fresh</a>
+                      <a href="#">Frozen</a>
+                      <a href="#">Dried</a>
+                    </div>
+                  </div>
                 <a href="aboutus/aboutus.html">About Us</a>
                 <a href="contact/contact.html">Contact</a>
-                <div class="login-bttn">
-                    <a href="login/loginpage.html">Login</a>
-                <!-- <select class="login-bttn" onchange="location = this.value;">
-                        <option value="" selected disabled>Login/Sign Up</option>
-                        <option value="login/loginpage.html">Login</option>
-                        <option value="signup.php">Sign Up</option>
-                </select> -->
-                </div>
+                <input type="text" placeholder="Search..">
+                <a href="login/loginpage.html" class="login-bttn">Login</a>
+
         </nav>
     </header>
     <main>
+        <div class="content">
+        </div>
     </main>
     <footer>
         <h3 class="footer">Copyright 2024. All Reserved</h3>

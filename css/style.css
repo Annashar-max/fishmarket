@@ -7,9 +7,10 @@ body {
     flex-direction: column;
     min-height: 100vh;
   background-color: #f5f5f5;
-
 }
 header {
+  width: 100%;
+  position: fixed;
   color: white;
   padding: 0;
   background-color: rgb(0, 25, 148);
@@ -34,6 +35,7 @@ header {
   padding: 10px 25px 10px;
   text-decoration: none;
   font-size: 17px;
+  border-radius: 10px;
 }
 .topnav a:hover {
   background-color: #f2f2f24f;
@@ -44,11 +46,57 @@ header {
   background-color: #0936ca;
   color: white;
 }
+.topnav a.login-bttn{
+  float: right;
 
+}.topnav input[type=text] {
+  float: left;
+  padding: 6px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 3px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+.topnav .icon {
+  display: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  color: white;
+  padding: 10px 10px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color:rgb(0, 25, 148);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #f2f2f24f;
+  color: white;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 .footer {
   margin: 0;
   background-color: rgb(0, 25, 148);
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
   color: #f2f2f2;
@@ -64,11 +112,18 @@ main {
   justify-content: center;
   align-items: center;
 }
-.login-bttn{
-  position: absolute;
-  right: 0px;
+.content{
+  margin-top: 175px;
+  background-image: url("../picture/pic1.jpg");
+  filter: blur(8px);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 .login {
+  background-color: #dddddd;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -129,8 +184,31 @@ main {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 768px) {
+
+@media (max-width: 500px) {
   .login-form {
       width: 90%; /* Adjust width for smaller screens */
+  }
+  .navbar a {
+    float: none;
+    display: block;
+  }
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
   }
 }

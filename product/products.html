@@ -16,12 +16,11 @@
                     <a href="products.html" class="active">Products</a>
                     <a href="../aboutus/aboutus.html">About Us</a>
                     <a href="../contact/contact.html">Contact</a>
-                    <div class="login-bttn">
-                        <a href="../login/loginpage.html">Login</a>
-                    </div>
+                    <a href="../login/loginpage.html" class="login-bttn">Login</a>
             </nav>
         </header>
     <main>
+        <div class="content">
         <h1>Shirt Information</h1>
         <form action="" method="post">
             <div> <label for="brandname">Brand Name:</label>
@@ -33,11 +32,11 @@
                 <label for="size">Size:</label>
                 </br>
                 <input type="radio" name="size" id="small" value="Small">
-                <span>Small</span>
+                <label for="small">Small</label>
                 <input type="radio" name="size" id="medium" value="medium">
-                <span>Medium</span>
+                <label for="medium">Medium</label>
                 <input type="radio" name="size" id="large" value="large">
-                <span>Large</span>
+                <label for="large">Large</label>
                 </br>
                 <span>Other:</span>
                 <input type="text" name="size" id="other" placeholder="xxs,xs,xxl,xl">
@@ -46,24 +45,25 @@
                 <label for="gender">Gender</label>
                 </br>
                 <input type="radio" name="gender" id="male" value="male">
-                <span>Male</span>
+                <label for="male">Male</label>
                 <input type="radio" name="gender" id="female" value="female">
-                <span>Female</span>
+                <label for="female">Female</label>
                 </br>
-                <span>Other</span>
+                <label for="other">Others</label>
                 <input type="text" name="gender" id="other">
             </div>
             <div>
                 <label for="age">Age</label>
             </br>
             <input type="checkbox" name="age" id="kids" value="kids" >
-            <span>Kids</span>
-            <input type="checkbox" name="age" id="teens" value="teens" > 
-            <span>Teens</span>
+            <<label for="kids">Kids</label>
+            <input type="checkbox" name="age" id="teens" value="teens" >
+            <label for="teens">Teen</label>
             <input type="checkbox" name="age" id="adult" value="adult" >
-            <span>Adult</span>
+            <label for="adult">Adult</label>
             </div>
         </form>
+        </div>
     </main>
     <footer>
         <h3 class="footer">Copyright 2024. All Reserved</h3>
