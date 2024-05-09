@@ -10,7 +10,6 @@ body {
 }
 header {
   width: 100%;
-  position: fixed;
   color: white;
   padding: 0;
   background-color: rgb(0, 25, 148);
@@ -128,8 +127,7 @@ header {
 .footer {
   margin: 0;
   background-color: rgb(0, 25, 148);
-  position: relative;
-  bottom: 0;
+  float: bottom;
   width: 100%;
   color: #f2f2f2;
   text-align: center;
@@ -145,7 +143,7 @@ main {
   align-items: center;
 }
 .content{
-  margin-top: 175px;
+  margin-top: 20px;
   /* background-image: url("../picture/pic1.jpg");
   filter: blur(8px);
   height: 100%;
@@ -216,7 +214,56 @@ main {
   display: flex;
   justify-content: space-between;
 }
+.cont-prod {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 100vh;
+}
 
+.image-container {
+  position: relative;
+  flex: 1;
+  margin: 0 10px;
+}
+
+.image-container img {
+  margin: auto;
+  width: 100%;
+  height: 50%;
+}
+
+.label {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(255, 249, 249);
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.content .cont-box{
+  flex: 1;
+  margin: 0 10px;
+}
+.content .cont-box .box1{
+  border: 1 solid;
+  background-color: #0936ca;
+  margin: auto;
+  width: 100%;
+  height: 50%;
+}.content .cont-box .box2{
+  border: 1 solid;
+  background-color: #ca0909;
+  margin: auto;
+  width: 100%;
+  height: 50%;
+}.content .cont-box .box3{
+  border: 1 solid;
+  background-color: #29ca09;
+  margin: auto;
+  width: 100%;
+  height: 50%;
+}
 @media (max-width: 500px) {
   .login-form {
       width: 90%; /* Adjust width for smaller screens */
