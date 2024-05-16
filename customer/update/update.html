@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyAccount</title>
+    <title>Customer | MyAccount</title>
     <link rel="stylesheet" type="text/css" href="../../css/style.css">
 
 </head>
@@ -12,80 +12,78 @@
     <header>
         <h1 class="title">Seafood Market</h1>
         <nav class="topnav">
-            <a href="../index.html">Home</a>
+            <a href="../customer.html">Home</a>
             <div class="dropdown">
                 <button class="dropbtn">Products
-                  <i class="fa fa-caret-down"></i>
+                    <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
                     <a href="../product/fresh.html">Fresh</a>
                     <a href="../product/frozen.html">Frozen</a>
                     <a href="../product/dried.html">Dried</a>
                 </div>
-              </div>
-            <a href="../aboutus/aboutus.html">About Us</a>
-            <a href="../aboutus/aboutus.html">Contact</a>
+            </div>
+            <a href="../about.html">About Us</a>
+            <a href="../contact.html">Contact Us</a>
             <div class="dropdown">
-            <button class="dropbtn">Order
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content">
-                  <a href="#">Order</a>
-                  <a href="#">Received</a>
-              </div>
+                <button class="dropbtn">Order
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../order/order.html">Order</a>
+                    <a href="../order/received.html">Received</a>
+                </div>
             </div>
             <input type="text" placeholder="Search..">
             <div class="account">
                 <button class="dropbtn" class="active">MyAccount
-                  <i class="fa fa-caret-down"></i>
+                    <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="account-content">
                     <a href="update.html" class="active">Update</a>
                     <a href="#">Logout</a>
                 </div>
-              </div>
-    </nav>
+            </div>
+        </nav>
     </header>
     <main>
-            <div class="content">
-                <form action="#" class="login">
-                    <h1>Profile</h1>
-                    <div class="sign">
-                        <div>
-                    <div class="form-group">
-                        <label for="firstname">Firstname:</label>
-                        <input type="text" name="firstname" id="firstname" placeholder="" >
-                    </div>
-                    <div class="form-group">
-                        <label for="lastname">Lastname:</label>
-                        <input type="text" name="lastname" id="lastname" placeholder="" >
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Password:</label>
-                        <input type="password" name="password" id="password" placeholder="" >
-                    </div>
-                    <div class="form-group">
-                        <label for="confirmPassword">Confirm Password:</label>
-                        <input type="password" name="confirmPassword" id="confirmPassword" placeholder="" >
-                    </div>
-                    <div class="form-group">
-                        <label for="address">Address:</label>
-                        <input type="text" name="address" id="address" placeholder="">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" id="email" placeholder="">
-                    </div>
+        <div class="profile-container">
+            <form action="#" class="profile-form">
+                <h1>Profile</h1>
+                <div class="profile-pic">
+                    <img src="../../picture/Fresh/fresh-silver-pomfret.jpg" alt="Profile Picture" id="profileImage">
+                    <input type="file" id="profilePicUpload" accept="image/*">
                 </div>
-            </div>
-                    <div>
-                        <div class="bot">
-                    <button type="submit" onclick="goBack()">Back</button>
+                <div class="form-grouped">
+                    <label for="firstname">Firstname:</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="">
+                </div>
+                <div class="form-grouped">
+                    <label for="lastname">Lastname:</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="">
+                </div>
+                <div class="form-grouped">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" placeholder="">
+                </div>
+                <div class="form-grouped">
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" name="confirmPassword" id="confirmPassword" placeholder="">
+                </div>
+                <div class="form-grouped">
+                    <label for="address">Address:</label>
+                    <input type="text" name="address" id="address" placeholder="">
+                </div>
+                <div class="form-grouped">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="">
+                </div>
+                <div class="button-grouped">
+                    <button type="button" onclick="goBack()">Back</button>
                     <button type="submit">Save</button>
-                    </div>
                 </div>
-                </form>
-    </div>
+            </form>
+        </div>
     </main>
     <footer>
         <h3 class="footer">Copyright 2024. All Reserved</h3>
@@ -93,7 +91,8 @@
 </body>
 <script>
     function goBack() {
-      window.history.back();
+        window.history.back();
     }
-    </script>
+</script>
+
 </html>
